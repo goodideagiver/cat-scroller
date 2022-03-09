@@ -20,7 +20,7 @@ function scrollHandler() {
 					document.documentElement.clientHeight + 1200
 				) {
 					canCountPlacement = 0;
-					console.log('reset', distanceToBottom);
+					// console.log('reset', distanceToBottom);
 				}
 			});
 	}
