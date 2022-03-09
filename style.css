@@ -23,15 +23,19 @@ body {
 
 .cat-container {
 	max-width: 1000px;
+	width: 90%;
 	max-height: 1000px;
-	padding: 20px;
-	margin: 2vh auto;
+	/* padding: 20px; */
+	margin: 3vh auto;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
 	animation: show-cat 1s 1s backwards;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
 }
 
 .cat-container img {
@@ -39,21 +43,22 @@ body {
 	max-height: 60vh;
 	object-fit: cover;
 	/* width: 100%; */
-	border-radius: 8px;
+	background-color: white;
 }
 
 .cat-container img:hover {
-	object-fit: scale-down;
+	object-fit: contain;
 }
 
 .cat-container p {
-	position: absolute;
+	/* position: absolute; */
 	bottom: 5px;
 	font-size: 1.2rem;
 	background-color: white;
 	padding: 15px;
-	border-radius: 8px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+	/* border-radius: 8px; */
+	margin: 0;
+	width: 100%;
 }
 
 @keyframes show-cat {
