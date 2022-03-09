@@ -31,6 +31,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	animation: show-cat 1s 1s backwards;
 }
 
 .cat-container img {
@@ -53,4 +54,14 @@ body {
 	padding: 15px;
 	border-radius: 8px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
+}
+
+@keyframes show-cat {
+	from {
+		opacity: 0;
+		transform: translate(0, 50%);
+	}
+	to {
+		opacity: 1;
+	}
 }
