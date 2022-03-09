@@ -24,11 +24,27 @@ body {
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	position: relative;
 }
 
 .cat-container img {
 	width: 100%;
 	max-height: 60vh;
-	object-fit: scale-down;
+	object-fit: cover;
 	/* width: 100%; */
+	border-radius: 8px;
+}
+
+.cat-container img:hover {
+	object-fit: scale-down;
+}
+
+.cat-container p {
+	position: absolute;
+	bottom: 5px;
+	font-size: 1.2rem;
+	background-color: white;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.178);
 }
