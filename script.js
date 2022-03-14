@@ -22,6 +22,9 @@ function scrollHandler() {
 					canCountPlacement = 0;
 					// console.log('reset', distanceToBottom);
 				}
+			})
+			.catch(error => {
+				console.log('There was a problem in downloading a cat');
 			});
 	}
 }
